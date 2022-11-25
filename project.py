@@ -7,7 +7,6 @@ import random
 import tester as te
 
 
-#try to load the pyfingerprint functionality. Throw error if not possible
 try:
 	import pyf
 	fprint_error = False
@@ -15,7 +14,7 @@ except ImportError:
 	print("Unable to load pyfingerprint function")
 	fprint_error = True
 
-#display menu
+
 print("\n\n\n\t\t\t\tCryptography Project")
 
 
@@ -41,8 +40,7 @@ else:
 	#image test functionality
 	if selection == 1:
 		print("\nRunning Secret Sharing on Image Tests")
-		#begin image tests
-		#get a valid filename
+		
 		fname = input("Please enter a filename: ")
 		fname = "../DATA/pictures/" + fname
 		print(fname)
