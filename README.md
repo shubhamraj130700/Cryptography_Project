@@ -29,7 +29,7 @@ python project.py
 #### There are three parts to the project:
 1. Image Encryption technique
 2. Fingerprint encryption/decryption from dataset
-3. Fingerpret reader, encryptor and decryptor
+
 
 #### For part 1:
 _________________________________________________________
@@ -55,9 +55,5 @@ Part 2 will choose an image from the dataset at random and display it's feature 
 The program will create a text file of the locations of the keypoints (titled "answerkey.txt") and .tsv files that contain the share values of the keypoints.
 By pressing enter (after the first 3 images appear), the program will randomly decrypt 3 "shares" files and create a text file of the decrypted shares.  You can then compare the decrypted text file with the answerkey to confirm the points were successfully restored.
 
-#### For part 3:
-______________________________________________________________
-Part 3 only runs on Linux.  You will need a fingerprint sensor compatible with pyfingerprint and you need to install the pyfingerprint library (which also requires the pyserial3 library).  The user is prompted to place their thumb on the sensor and an image of the user's thumbprint is saved.  This portion of the application essentially does the same thing as part 2 except the processed image is the one collected by the sensor.  I used the FlashTree Green Light Optical Fingerprint Sensor connected to a USB to TTL serial converter.  
 
-## Credits
-The library uses OpenCV for the image processing and pyfingerprint (github.com/bastianraschke/pyfingerprint) for the capturing of the fingerprint images.  The python implementation of Shamir's Secret Sharing Scheme has been slightly modified from a version released into the Public Domain under the terms of CC0 and OWFa.  Techniques for the collection of fingerprint data came from the book "OpenCV 3 Blueprints" by Joseph Howse.
+.
