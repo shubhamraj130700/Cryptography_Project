@@ -3,17 +3,20 @@
 
 
 ## Description
+The purpose of this project was to implement a visual cryptographic technique using Shamir’s 
+Secret Sharing Scheme for improved Biometric Data protection. The techniques used were based on the 
+theory that was discussed in class regarding Shamir’s Secret Sharing Scheme. 
+
 One of the cryptographic techniques that we studied was Shamir's Secret Sharing Scheme. The (t,n) sharing scheme splits a secret into n unique pieces/"shares" that contain information to "reconstruct" the secret. The secret can only be reconstructed if information from at least t shares are combined. In this application, pixels from an image are encrypted using the (t,n) sharing scheme, resulting in n new images. By combining t of these n images, the original image can be restored.  
 
 
 
 This program runs on python 3 and requires the installation of the following libraries:
 
-OpenCV and OpenCV-Contrib </br>
+OpenCV and OpenCV-Contrib </br>(for images converted into gray scale)
 Numpy </br>
 
 
-## Usage
 
 ### To run the program
 ****
@@ -37,7 +40,7 @@ As it stands, the program currently works best when t=3.  When t=4, it sometimes
 Anything greater than 4 will result in the program terminating. </br>
 
 The program will then display the image in grayscale and prompt you to press enter.
-The program will encrypt the images and save them in the DATA/pictures folder.
+
 
 ##### Decryption:
 
